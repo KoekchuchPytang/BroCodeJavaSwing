@@ -1,0 +1,9 @@
+package D_Buttons;
+
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+        new MyFrame2();
+    }
+}
