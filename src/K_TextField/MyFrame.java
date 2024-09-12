@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 public class MyFrame extends JFrame implements ActionListener {
     JButton button;
     JTextField textField;
+    String teste;
     MyFrame(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
@@ -31,9 +32,12 @@ public class MyFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==button){
-            System.out.println("I love you " + textField.getText());
-            button.setEnabled(false);
-            textField.setEditable(false);
+            System.out.println(textField.getText());
+            teste = textField.getText();
+            System.out.println(teste.getClass());
+            if (teste.isEmpty()){
+                System.out.println("Alo");
+            }
 
             //this.setSize(Integer.parseInt(textField.getText()),Integer.parseInt(textField.getText()));
         }

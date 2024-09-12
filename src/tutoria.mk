@@ -23,7 +23,7 @@ setIconTextGap(tamanho); espaço entre o texto e a imagem
 setBackground(new Color()); escolhe a cor do background
 setOpaque(true); // mostra a cor do background
 Border borda = BorderFactory.createLineBorder(new Color()); // cria uma borda
-setBorder(borda); // escolhe a corda do label
+setBorder(borda); // escolhe a borda do label
 setVerticalAlignment(JLabel.POSIÇÃO); // escolhe uma posição vertical do icontext dentro do label
 setHorizontalAlignment(JLabel.POSIÇÃO); // mesma coisa
 setBounds(x,y, width, height);// diz onde começa e qual o tamanho do label caso o setLayout do frame esteja em (null)
